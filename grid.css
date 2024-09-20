@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    height: auto;
+    gap: 10px;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 20px 0;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.encabezado h1 {
+    font-size: 4em;
+}
+
+.encabezado h2 {
+    font-size: 2.5em;
+}
+
+.sobreMi {
+    text-align: center;
+    margin: 15px 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sobreMi h3 {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.sobreMi p {
+    font-size: 1.2em;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.proyectos h3 {
+    grid-column: 1/4;
+    font-size: 1.8em;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.contenido {
+    padding: 15px;
+    line-height: 1.3;
+    margin: 10px 0;
+}
+
+.contenido a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px;
+    border: 1px solid rgb(61, 61, 255);
+    color: blue;
+    border-radius: 8px;
+    transition: all 400ms ease;
+}
+
+.contenido a:hover {
+    background-color: rgb(24, 190, 190);
+    color: #fff;
+}
+
+.contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #33f7b6a8;
+    color: black;
+}
+
+/* Media queries */
+/* @media (max-width: 1024px) {
+    .proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+} */
